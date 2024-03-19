@@ -34,7 +34,7 @@ export default function App() {
       <View style={styles.goalsContainer}>
         <FlatList
           data={coarseGoals}
-          keyExtractor={(item, data) => {
+          keyExtractor={(item) => {
             return item.id;
           }}
           renderItem={(itemData) => {
